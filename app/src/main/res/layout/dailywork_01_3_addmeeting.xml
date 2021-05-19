@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:shrinkColumns="0,1，3"
+    android:stretchColumns="2"
+    android:gravity="left">
+
+<!--    图标-->
+    <TableRow>
+        <ImageView
+            android:layout_height="60dp"
+            android:layout_span="4"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/reg" />
+    </TableRow>
+
+<!--    会议主题行-->
+    <TableRow android:layout_height="40dp">
+        <TextView android:layout_width="20dp"/>
+        <TextView
+            android:id="@+id/themeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议主题："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="请输入会议主题"
+            android:textSize="@dimen/log" />
+        <TextView android:layout_width="20dp" />
+    </TableRow>
+
+    <!--    会议举行时间行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举行时间："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入会议举行时间"
+            android:textSize="@dimen/log" />
+        <TextView />
+    </TableRow>
+
+    <!--    会议类型行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/typeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议类型："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入会议类型"
+            android:textSize="@dimen/log"/>
+        <TextView />
+    </TableRow>
+    <!--会议简介-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/briefLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议简介："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请再次会议简介"
+            android:textSize="@dimen/log"/>
+        <TextView />
+    </TableRow>
+
+
+    <!--    添加会议按钮-->
+    <TableRow
+        android:id="@+id/add">
+        <TextView/>
+        <Button
+            android:id="@+id/addMeetingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="添加会议" />
+        <TextView />
+    </TableRow>
+
+    <!--    修改会议按钮-->
+    <TableRow
+        android:id="@+id/update"
+        android:visibility="gone">
+        <TextView/>
+        <Button
+            android:id="@+id/updateMeetingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="修改会议" />
+        <TextView />
+    </TableRow>
+
+
+
+</TableLayout>

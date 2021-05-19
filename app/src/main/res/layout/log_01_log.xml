@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inputback"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/schoolbadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:background="#0000"
+        android:src="@mipmap/school"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/stuNum"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="请输入学号"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/stuNameLabel"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/userNameLabel"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/password"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="请输入密码"-->
+<!--        android:inputType="textPassword"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/passwordLabel"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/stuNum"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/passwordLabel"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/stuNameLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginBottom="52dp"-->
+<!--        android:text="学号："-->
+<!--        android:textSize="@dimen/logLabel"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/passwordLabel"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/passwordLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="176dp"-->
+<!--        android:text="密码："-->
+<!--        android:textSize="@dimen/logLabel"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/password"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/stuNameLabel"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/schoolbadge" />-->
+
+
+    <TableLayout
+        android:id="@+id/stuNumTableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconinput"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:stretchColumns="0, 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolbadge">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:paddingEnd="20dp"
+                android:src="@mipmap/user"/>
+
+            <EditText
+                android:id="@+id/stuNum"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="请输入学号" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/passwordTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconinput"
+        android:orientation="horizontal"
+        android:stretchColumns="0, 3"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stuNumTableLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:paddingEnd="20dp"
+                android:src="@mipmap/password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="请输入密码" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+
+    <!--    <Button-->
+<!--        android:id="@+id/regButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="92dp"-->
+<!--        android:text="注册"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/logButton"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/logButton" />-->
+
+    <Button
+        android:id="@+id/logButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:background="#90aac3"
+        android:text="登录"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTableLayout"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/regButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="点击这里进行注册"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTableLayout" />
+
+    <!--    <TableRow-->
+<!--        android:layout_width="162dp"-->
+<!--        android:layout_height="288dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/regButton"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/schoolbadge"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <TextView />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:paddingEnd="20dp"-->
+<!--            android:src="@mipmap/reg" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:hint="请输入用户名" />-->
+
+<!--        <TextView />-->
+<!--    </TableRow>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

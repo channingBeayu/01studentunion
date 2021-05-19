@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentunion">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentUnion">
+        <activity android:name=".department.msc.BM_msc_02_duty" />
+        <activity android:name=".department.Department_03_bmaffair" />
+        <activity android:name=".department.Department_03_addBmaffair" />
+        <activity android:name=".department.Department_02_showFile" />
+        <activity android:name=".department.Department_02_file" />
+        <activity android:name=".department.Department_01_list" />
+        <activity android:name=".department.Department_02_addFile" />
+        <activity
+            android:name=".department.Department_TabHost"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".admin.Admin_index" />
+        <activity android:name=".department.msc.BM_msc_01_addMaterial" />
+        <activity android:name=".department.msc.BM_msc_01_material" />
+        <activity
+            android:name=".department.msc.BM_msc_TabHost"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".TabHost_index"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity android:name=".dailyWork.DailyWork_01_2_showStudents" />
+        <activity android:name=".dailyWork.DailyWork_01_index" />
+        <activity android:name=".dailyWork.DailyWork_01_3_addMeeting" />
+        <activity android:name=".my.My_02_userInfo" />
+        <activity android:name=".my.My_01_index" />
+        <activity android:name=".Log_02_Reg" />
+        <activity android:name=".Log_01_Log"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".index"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

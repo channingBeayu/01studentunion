@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dailywork"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLinearLayout"
+    tools:context=".dailyWork.DailyWork_01_index">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/titleRow"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/meeting" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meetingItemsLabel"
+                android:textSize="15sp"
+                android:textColor="#e2dbff"
+                android:gravity="center"
+                android:text="会议"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contact" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/contactsLabel"
+                android:textSize="15sp"
+                android:textColor="#e2dbff"
+                android:textFontWeight="800"
+                android:text="通信录"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/volunteer" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/announcementLabel"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#e2dbff"
+                android:text="志愿者"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:name="com.example.studentunion.dailyWork.DailyWork_01_Fragment2_Contacts"-->
+<!--        android:id="@+id/fragment1"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/childLinearLayout"
+        android:orientation="vertical"/>
+
+</LinearLayout>

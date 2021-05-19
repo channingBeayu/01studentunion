@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back"
+    android:gravity="left"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:stretchColumns="2">
+
+    <!--    图标-->
+<!--    <TableRow>-->
+
+<!--        <ImageView-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_span="4"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:src="@mipmap/reg" />-->
+<!--    </TableRow>-->
+
+    <!--    姓名行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_span="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <TextView android:layout_width="20dp" />
+    </TableRow>
+    
+
+
+    <!--    学号行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/stuNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入学号"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+
+    <!--    密码-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+    <!--再次输入密码-->
+    <TableRow
+        android:id="@+id/passwordAgainRow"
+        android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/passwordAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+    <!--    性别行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入性别"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+
+
+    <!--    手机行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+    <!--    班级行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/className"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入班级"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+    <!--    部门行-->
+    <TableRow android:layout_height="40dp"
+        android:background="@drawable/iconinput"
+        android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="20dp" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="35dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/input" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入部门"
+            android:textSize="20sp" />
+
+        <TextView />
+    </TableRow>
+
+    <!--    注册按钮-->
+    <TableRow>
+
+        <TextView />
+
+        <Button
+            android:background="#cdeca9"
+            android:id="@+id/regButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="注册" />
+
+        <TextView />
+    </TableRow>
+
+    <!--    修改按钮-->
+    <TableRow>
+
+        <TextView />
+
+        <Button
+            android:id="@+id/updateStudentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="修改"
+            android:visibility="gone" />
+
+        <TextView />
+    </TableRow>
+
+
+</TableLayout>

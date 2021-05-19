@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="stuQuery">
+        <item>姓名</item>
+        <item>手机号</item>
+        <item>性别</item>
+        <item>部门</item>
+        <item>班级</item>
+    </array>
+
+    <array name="departmentList">
+        <item>秘书处</item>
+        <item>文艺部</item>
+        <item>纪检部</item>
+        <item>科创部</item>
+        <item>宣传部</item>
+        <item>体育部</item>
+        <item>所有</item>
+    </array>
+</resources>

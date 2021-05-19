@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:shrinkColumns="0,1，3"
+    android:stretchColumns="2"
+    android:gravity="left">
+
+<!--    图标-->
+    <TableRow>
+        <ImageView
+            android:layout_height="60dp"
+            android:layout_span="4"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/reg" />
+    </TableRow>
+
+<!--    事务名行-->
+    <TableRow android:layout_height="40dp">
+        <TextView android:layout_width="20dp"/>
+        <TextView
+            android:id="@+id/bmaffairNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事务名："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/bmaffairName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="请输事务名"
+            android:textSize="@dimen/log" />
+        <TextView android:layout_width="20dp" />
+    </TableRow>
+
+    <!--    事务当前进度行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/processLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事务当前进度："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入事务当前进度"
+            android:textSize="@dimen/log" />
+        <TextView />
+    </TableRow>
+
+    <!--    事务所属部门行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/departmentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事务所属部门："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入事务所属部门"
+            android:textSize="@dimen/log" />
+        <TextView />
+    </TableRow>
+
+    <!--    添加事务按钮-->
+    <TableRow
+        android:id="@+id/add">
+        <TextView/>
+        <Button
+            android:id="@+id/addBmaffairButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="添加事务" />
+        <TextView />
+    </TableRow>
+
+    <!--    修改事务按钮-->
+    <TableRow
+        android:id="@+id/update"
+        android:visibility="gone">
+        <TextView/>
+        <Button
+            android:id="@+id/updateBmaffairButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="修改事务" />
+        <TextView />
+    </TableRow>
+
+
+
+</TableLayout>

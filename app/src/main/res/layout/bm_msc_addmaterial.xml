@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:shrinkColumns="0,1，3"
+    android:stretchColumns="2"
+    android:gravity="left">
+
+<!--    图标-->
+    <TableRow>
+        <ImageView
+            android:layout_height="60dp"
+            android:layout_span="4"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/reg" />
+    </TableRow>
+
+<!--    物资名行-->
+    <TableRow android:layout_height="40dp">
+        <TextView android:layout_width="20dp"/>
+        <TextView
+            android:id="@+id/materialNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物资名："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/materialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="请输物资名"
+            android:textSize="@dimen/log" />
+        <TextView android:layout_width="20dp" />
+    </TableRow>
+
+    <!--    物资现有数量行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/numLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物资现有数量："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入物资现有数量"
+            android:textSize="@dimen/log" />
+        <TextView />
+    </TableRow>
+
+    <!--    物资存放位置行-->
+    <TableRow android:layout_height="40dp">
+        <TextView />
+        <TextView
+            android:id="@+id/positionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物资存放位置："
+            android:textSize="@dimen/logLabel" />
+        <EditText
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入物资存放位置"
+            android:textSize="@dimen/log"/>
+        <TextView />
+    </TableRow>
+
+    <!--    添加物资按钮-->
+    <TableRow
+        android:id="@+id/add">
+        <TextView/>
+        <Button
+            android:id="@+id/addMaterialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="添加物资" />
+        <TextView />
+    </TableRow>
+
+    <!--    修改物资按钮-->
+    <TableRow
+        android:id="@+id/update"
+        android:visibility="gone">
+        <TextView/>
+        <Button
+            android:id="@+id/updateMaterialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="修改物资" />
+        <TextView />
+    </TableRow>
+
+
+
+</TableLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/msc"
+    android:layout_height="match_parent"
+    tools:context=".department.msc.BM_msc_02_duty">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="值班表"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/textSize"-->
+<!--        android:gravity="center"/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:src="@drawable/table" />
+
+    <!--    课程表-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/listview"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tableLayout"
+        android:padding="@dimen/padding">
+
+        <TableRow
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="星期一"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="星期二"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="星期三"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="星期四"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="星期五"
+                android:textSize="@dimen/textSize" />
+        </TableRow>
+        <!--第1、2节-->
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_weight="1"
+                android:text="星期一"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+        </TableRow>
+
+        <!--第3、4节-->
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_weight="1"
+                android:text="星期一"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+        </TableRow>
+        <!--第5、6节-->
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_weight="1"
+                android:text="星期一"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+        </TableRow>
+        <!--第7、8节-->
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_weight="1"
+                android:text="星期一"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="星期一"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createButton"
+        android:text="生成"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

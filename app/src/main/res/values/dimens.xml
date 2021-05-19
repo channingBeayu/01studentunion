@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logLabel">24sp</dimen>
+    <dimen name="log">18sp</dimen>
+    <dimen name="head">70dp</dimen>
+    <dimen name="padding">20dp</dimen>
+    <dimen name="textSize">20dp</dimen>
+</resources>

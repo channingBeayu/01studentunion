@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="秘书处" android:id="@+id/msc"></item>
+    <item android:title="文艺部" android:id="@+id/wyb"></item>
+    <item android:title="纪检部" android:id="@+id/jjb"></item>
+    <item android:title="科创部" android:id="@+id/kcb"></item>
+    <item android:title="宣传部" android:id="@+id/xcb"></item>
+    <item android:title="体育部" android:id="@+id/tyb"></item>
+</menu>

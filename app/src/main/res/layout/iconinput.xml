@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/iconinput"
+    android:stretchColumns="0, 3"
+    android:orientation="horizontal">
+    <TableRow>
+        <TextView/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingEnd="20dp"
+            android:src="@mipmap/reg" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入用户名" />
+        <TextView/>
+    </TableRow>
+</TableLayout>
